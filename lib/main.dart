@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:world_kitchen/di/injector.dart';
 import 'package:world_kitchen/presentation/providers/countries_provider.dart';
@@ -29,6 +30,35 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
           useMaterial3: true,
+          textTheme: GoogleFonts.robotoTextTheme().copyWith(
+            displayLarge: GoogleFonts.playfairDisplay(
+              textStyle: GoogleFonts.robotoTextTheme().displayLarge,
+            ),
+            displayMedium: GoogleFonts.playfairDisplay(
+              textStyle: GoogleFonts.robotoTextTheme().displayMedium,
+            ),
+            displaySmall: GoogleFonts.playfairDisplay(
+              textStyle: GoogleFonts.robotoTextTheme().displaySmall,
+            ),
+            headlineLarge: GoogleFonts.playfairDisplay(
+              textStyle: GoogleFonts.robotoTextTheme().headlineLarge,
+            ),
+            headlineMedium: GoogleFonts.playfairDisplay(
+              textStyle: GoogleFonts.robotoTextTheme().headlineMedium,
+            ),
+            headlineSmall: GoogleFonts.playfairDisplay(
+              textStyle: GoogleFonts.robotoTextTheme().headlineSmall,
+            ),
+            titleLarge: GoogleFonts.playfairDisplay(
+              textStyle: GoogleFonts.robotoTextTheme().titleLarge,
+            ),
+            titleMedium: GoogleFonts.playfairDisplay(
+              textStyle: GoogleFonts.robotoTextTheme().titleMedium,
+            ),
+            titleSmall: GoogleFonts.playfairDisplay(
+              textStyle: GoogleFonts.robotoTextTheme().titleSmall,
+            ),
+          ),
         ),
         routerConfig: appRouter,
       ),

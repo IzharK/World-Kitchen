@@ -54,6 +54,7 @@ dependencies:
 
   # Deep Linking
   url_launcher: ^6.2.0
+  google_fonts: ^6.3.2
 
 dev_dependencies:
   flutter_test:
